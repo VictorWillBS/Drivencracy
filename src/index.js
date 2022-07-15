@@ -26,6 +26,6 @@ app.post("/choice/:id/vote",createVote)
 app.get("/pool/:id/result",getResult)
 
 
-app.listen(5000,()=>{
+app.listen(process.env.PORT,()=>{
     console.log(chalk.green("Servidor Funcionando"))
 })
